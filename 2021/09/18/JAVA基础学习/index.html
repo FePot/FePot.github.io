@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>JAVA基础学习 | FePot&#39;s home</title>
+  <title>JAVA语法基础学习 | FePot&#39;s home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一.JDK JRE JVMJDK : java开发者工具，里面包含了JRE和JVM JRE : java运行时环境，里面包含了JVM JVM : java虚拟机 二.编译运行java文件在java文件所在目录下打开cmd 1.编译（生成class文件） 1javac 文件名.java  2.运行 1java 类名">
+  <meta name="description" content="一.JDK JRE JVMJDK : java开发者工具，里面包含了JRE和JVM JRE : java运行时环境，里面包含了JVM JVM : java虚拟机 二.编译运行java文件在java文件所在目录下打开cmd 1.编译（生成class文件） 1javac 文件名.java  2.运行 1java 类名  三.java语法区别1.数据类型一般要在long类型的数值后面加上 ‘ L ’，在">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JAVA基础学习">
+<meta property="og:title" content="JAVA语法基础学习">
 <meta property="og:url" content="http://example.com/2021/09/18/JAVA%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="FePot&#39;s home">
-<meta property="og:description" content="一.JDK JRE JVMJDK : java开发者工具，里面包含了JRE和JVM JRE : java运行时环境，里面包含了JVM JVM : java虚拟机 二.编译运行java文件在java文件所在目录下打开cmd 1.编译（生成class文件） 1javac 文件名.java  2.运行 1java 类名">
+<meta property="og:description" content="一.JDK JRE JVMJDK : java开发者工具，里面包含了JRE和JVM JRE : java运行时环境，里面包含了JVM JVM : java虚拟机 二.编译运行java文件在java文件所在目录下打开cmd 1.编译（生成class文件） 1javac 文件名.java  2.运行 1java 类名  三.java语法区别1.数据类型一般要在long类型的数值后面加上 ‘ L ’，在">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-09-18T08:33:38.000Z">
-<meta property="article:modified_time" content="2021-09-18T13:33:48.500Z">
+<meta property="article:modified_time" content="2021-09-20T13:26:13.815Z">
 <meta property="article:author" content="FePot">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="基础">
@@ -141,7 +141,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      JAVA基础学习
+      JAVA语法基础学习
     </h1>
   
 
@@ -164,10 +164,32 @@
 <p>2.运行</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java 类名</span><br></pre></td></tr></table></figure>
 
+<h3 id="三-java语法区别"><a href="#三-java语法区别" class="headerlink" title="三.java语法区别"></a>三.java语法区别</h3><h5 id="1-数据类型"><a href="#1-数据类型" class="headerlink" title="1.数据类型"></a>1.数据类型</h5><p>一般要在long类型的数值后面加上 ‘ L ’，在float类型的数值后面加上 ‘ F ’ ，例如</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">long</span> num1 = <span class="number">30L</span>;</span><br><span class="line"><span class="keyword">float</span> num2 = <span class="number">3.4F</span>;</span><br></pre></td></tr></table></figure>
 
+<p>String不是关键字，是类</p>
+<h5 id="2-包机制"><a href="#2-包机制" class="headerlink" title="2.包机制"></a>2.包机制</h5><p>package    这里是类所在的路径，用点(.)连接（域名倒置作为包名）</p>
+<p>import</p>
+<h5 id="3-JavaDoc生成api文档"><a href="#3-JavaDoc生成api文档" class="headerlink" title="3.JavaDoc生成api文档"></a>3.JavaDoc生成api文档</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javadoc -encoding UTF-8 -charset UTF-8 XXX.java</span><br></pre></td></tr></table></figure>
 
+<p>也可以在IDEA里面选择工具-&gt;生成javadoc</p>
+<h5 id="4-人机交互Scanner"><a href="#4-人机交互Scanner" class="headerlink" title="4.人机交互Scanner"></a>4.人机交互Scanner</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Scanner_test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner scanner = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">        <span class="comment">//scanner.hasNext()</span></span><br><span class="line">        <span class="comment">//scanner.next()    scanner.nextLine()</span></span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">        scanner.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h5 id="5-equals和-的区别"><a href="#5-equals和-的区别" class="headerlink" title="5.equals和==的区别"></a>5.equals和==的区别</h5><p>==要相同地址才相等</p>
+<h5 id="6-foreach循环"><a href="#6-foreach循环" class="headerlink" title="6.foreach循环"></a>6.foreach循环</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> x:某个数组)&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h5 id="7-可变参数"><a href="#7-可变参数" class="headerlink" title="7.可变参数"></a>7.可变参数</h5><p>指定参数类型后加省略号</p>
+<p>一个方法中只能指定一个可变参数，且必须是方法的最后一个参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public static void xxx(double... bumbers)&#123;	//不确定有多少个参数</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="8-super"><a href="#8-super" class="headerlink" title="8.super"></a>8.super</h5><p>类似于this，this调用的是当前类</p>
+<p>super调用的是父类的属性或方法（注意调用时父类的属性或方法不能是私有的），只能在继承条件下使用</p>
+<h5 id="9-interface接口"><a href="#9-interface接口" class="headerlink" title="9.interface接口"></a>9.interface接口</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">xxx</span></span>&#123;</span><br><span class="line">	<span class="keyword">void</span> 方法一&#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对应的实现接口的类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">xxxImpl</span> <span class="keyword">implements</span> <span class="title">xxx</span></span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> 方法一&#123;</span><br><span class="line">		...</span><br><span class="line">	&#125;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>接口可以实现伪多继承</p>
 
       
 
