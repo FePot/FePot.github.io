@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>计算机底层基础 | FePot&#39;s home</title>
+  <title>算法练习随笔 | FePot&#39;s home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="编码规则  1.有符号数的编码规则    原码:​        最高位为符号位 ​    反码:​        正数:反码和原码相同​        负数:符号位一定是1，其余位对原码取反 ​    补码:​        正数:补码和原码相同​        负数:符号位一定是1，反码+1  位运算  1.与运算(and &amp;) 2.或运算(or |) 3.异或运算(xor ^) 4">
+  <meta name="description" content="day1输入样例中如果不包含空白字符，可以使用scanf进行输入； 若含有空白字符，可以使用fgetc或者getchar读取下一个字符 使用printf时注意不要输入&amp; 在条件循环判断的时候要注意极端的情况，就如当字符串长度为1时（在判断回文镜像串的时候吃了亏），在判断镜像串的时候要将中间的字符也判断一下，但是由于回文串并不需要这样做，到镜像串的时候没想那么多，就修改了很久 有时候还要考虑">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算机底层基础">
-<meta property="og:url" content="http://example.com/2021/12/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%95%E5%B1%82%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:title" content="算法练习随笔">
+<meta property="og:url" content="http://example.com/2022/02/05/%E7%AE%97%E6%B3%95%E7%BB%83%E4%B9%A0%E9%9A%8F%E7%AC%94/index.html">
 <meta property="og:site_name" content="FePot&#39;s home">
-<meta property="og:description" content="编码规则  1.有符号数的编码规则    原码:​        最高位为符号位 ​    反码:​        正数:反码和原码相同​        负数:符号位一定是1，其余位对原码取反 ​    补码:​        正数:补码和原码相同​        负数:符号位一定是1，反码+1  位运算  1.与运算(and &amp;) 2.或运算(or |) 3.异或运算(xor ^) 4">
+<meta property="og:description" content="day1输入样例中如果不包含空白字符，可以使用scanf进行输入； 若含有空白字符，可以使用fgetc或者getchar读取下一个字符 使用printf时注意不要输入&amp; 在条件循环判断的时候要注意极端的情况，就如当字符串长度为1时（在判断回文镜像串的时候吃了亏），在判断镜像串的时候要将中间的字符也判断一下，但是由于回文串并不需要这样做，到镜像串的时候没想那么多，就修改了很久 有时候还要考虑">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-12-12T14:09:31.000Z">
-<meta property="article:modified_time" content="2021-12-13T08:47:10.725Z">
+<meta property="article:published_time" content="2022-02-05T13:55:32.000Z">
+<meta property="article:modified_time" content="2022-02-06T11:45:10.025Z">
 <meta property="article:author" content="FePot">
-<meta property="article:tag" content="基础">
-<meta property="article:tag" content="底层">
+<meta property="article:tag" content="oj">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="FePot&#39;s home" type="application/atom+xml">
@@ -134,46 +133,33 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-计算机底层基础" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-算法练习随笔" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      计算机底层基础
+      算法练习随笔
     </h1>
   
 
         
-        <a href="/2021/12/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%95%E5%B1%82%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-  	<time datetime="2021-12-12T14:09:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-12</time>
+        <a href="/2022/02/05/%E7%AE%97%E6%B3%95%E7%BB%83%E4%B9%A0%E9%9A%8F%E7%AC%94/" class="archive-article-date">
+  	<time datetime="2022-02-05T13:55:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>编码规则</p>
-</blockquote>
-<p>1.有符号数的编码规则<br>    原码:<br>​        最高位为符号位</p>
-<p>​    反码:<br>​        正数:反码和原码相同<br>​        负数:符号位一定是1，其余位对原码取反</p>
-<p>​    补码:<br>​        正数:补码和原码相同<br>​        负数:符号位一定是1，反码+1</p>
-<blockquote>
-<p>位运算</p>
-</blockquote>
-<p>1.与运算(and &amp;)</p>
-<p>2.或运算(or |)</p>
-<p>3.异或运算(xor ^)</p>
-<p>4.非运算(not ~)</p>
-<p>5.位运算(移动位)</p>
-<p>​    左移(&lt;&lt;)</p>
-<p>​    右移(&gt;&gt;)</p>
-<blockquote>
-<p>寄存器</p>
-</blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">		FFFF    FF</span><br><span class="line">32位	   16位	  8位</span><br><span class="line">EAX		AX		AL</span><br><span class="line">ECX		Cx		CL</span><br><span class="line">EDX		DX		DL</span><br><span class="line">EBX		BX		BL</span><br><span class="line">ESP		SP		AH</span><br><span class="line">ENP		NP		CH</span><br><span class="line">ESI		SI		DH</span><br><span class="line">EDI		DI		BH</span><br></pre></td></tr></table></figure>
+        <h3 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h3><p>输入样例中如果不包含空白字符，可以使用<code>scanf</code>进行输入；</p>
+<p>若含有空白字符，可以使用<code>fgetc</code>或者<code>getchar</code>读取下一个字符</p>
+<p>使用<code>printf</code>时注意不要输入&amp;</p>
+<p>在条件循环判断的时候要注意极端的情况，就如当字符串长度为1时（在判断回文镜像串的时候吃了亏），在判断镜像串的时候要将中间的字符也判断一下，但是由于回文串并不需要这样做，到镜像串的时候没想那么多，就修改了很久</p>
+<p>有时候还要考虑一下运行时间</p>
+<h3 id="day2"><a href="#day2" class="headerlink" title="day2"></a>day2</h3><p>分情况思考</p>
+<p>二分排序降低时间复杂度</p>
 
       
 
@@ -187,11 +173,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">底层</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
         		</li>
       		
 		</ul>
@@ -247,7 +229,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/12/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%95%E5%B1%82%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/02/05/%E7%AE%97%E6%B3%95%E7%BB%83%E4%B9%A0%E9%9A%8F%E7%AC%94/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -261,18 +243,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/12/13/HTML/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          HTML
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/11/12/Qt%E7%AE%80%E5%8D%95%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Qt简单学习</div>
+    <a href="/2022/02/02/JavaWeb/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaWeb</div>
       <i class="icon-circle-right"></i>
     </a>
   
