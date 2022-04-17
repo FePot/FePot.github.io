@@ -16,7 +16,7 @@
 <meta property="og:description" content="day1输入样例中如果不包含空白字符，可以使用scanf进行输入； 若含有空白字符，可以使用fgetc或者getchar读取下一个字符 使用printf时注意不要输入&amp; 在条件循环判断的时候要注意极端的情况，就如当字符串长度为1时（在判断回文镜像串的时候吃了亏），在判断镜像串的时候要将中间的字符也判断一下，但是由于回文串并不需要这样做，到镜像串的时候没想那么多，就修改了很久 有时候还要考虑">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-02-05T13:55:32.000Z">
-<meta property="article:modified_time" content="2022-02-06T11:45:10.025Z">
+<meta property="article:modified_time" content="2022-03-13T07:37:37.889Z">
 <meta property="article:author" content="FePot">
 <meta property="article:tag" content="oj">
 <meta name="twitter:card" content="summary">
@@ -160,6 +160,34 @@
 <p>有时候还要考虑一下运行时间</p>
 <h3 id="day2"><a href="#day2" class="headerlink" title="day2"></a>day2</h3><p>分情况思考</p>
 <p>二分排序降低时间复杂度</p>
+<h4 id="穷竭搜索"><a href="#穷竭搜索" class="headerlink" title="穷竭搜索"></a>穷竭搜索</h4><p>将所有可能性列出来寻找答案的方法</p>
+<p>在编写一个递归函数时，函数的停止条件是必须存在的，就如在斐波那契数列中，a0 = 0，a1 = 1的初始条件就对应了递归的终止条件</p>
+<p>若要缩短递归需要的时间，可以用数列将计算过一次的结果存储下来（记忆化搜索或者动态规划）</p>
+<p>深度优先搜索从最开始的状态出发，根据深度搜索的特点，使用递归算法比较简单</p>
+<p>全局变量被保存在堆内存区。通常不推荐使用全局变量，但是在程序设计竞赛中，由于函数通常不是那么多，并且常常会有多个函数访问同一个数组，因此利用全局变量就很方便。此外，有时必须要申请巨大的数组，与放置在栈内存上相比，将其放置在堆内存上可以减少栈溢出的危险。</p>
+<h3 id="day3"><a href="#day3" class="headerlink" title="day3"></a>day3</h3><h4 id="贪心法"><a href="#贪心法" class="headerlink" title="贪心法"></a>贪心法</h4><p>遵循某种规则，不断贪心地选取当前最优策略的一种方法</p>
+<p>区间问题，最小字典序问题</p>
+<p>涉及区间的，从最左或者最右或者两边同时考虑起，单独挑一种情况出来考虑，然后往下推进</p>
+<p>char类型的数字1转为int类型的数字1，可以通过减去’ 0 ‘来完成</p>
+<h3 id="day4"><a href="#day4" class="headerlink" title="day4"></a>day4</h3><h4 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h4><p>（记住求过的解来节省时间）</p>
+<p>动态规划的核心是状态和状态转移方程</p>
+<p>使用<code>memset</code>可以更高效地为高维数组进行初始化<code>memset(初始化数组a,0或-1,sizeof(a))</code></p>
+<p>全局最优解一定是局部最优解，但局部最优解不一定是全局最优解</p>
+<p>使用记忆化搜索缩短运算需要的时间</p>
+<h3 id="day5"><a href="#day5" class="headerlink" title="day5"></a>day5</h3><h4 id="优先队列（使用堆结构）"><a href="#优先队列（使用堆结构）" class="headerlink" title="优先队列（使用堆结构）"></a>优先队列（使用堆结构）</h4><p>可以直接取出最大或最小的值（STL）</p>
+<h4 id="二叉搜索树"><a href="#二叉搜索树" class="headerlink" title="二叉搜索树"></a>二叉搜索树</h4><p>左子树上的所有结点都比自己小，右子树上的所有结点都比自己大（STL）</p>
+<h4 id="并查集"><a href="#并查集" class="headerlink" title="并查集"></a>并查集</h4><p>可以进行合并操作，无法进行分割操作</p>
+<p>查询：如果两个结点的根相同，就是在同一组</p>
+<h3 id="day6"><a href="#day6" class="headerlink" title="day6"></a>day6</h3><h4 id="最短路径问题"><a href="#最短路径问题" class="headerlink" title="最短路径问题"></a>最短路径问题</h4><h4 id="最小生成树问题"><a href="#最小生成树问题" class="headerlink" title="最小生成树问题"></a>最小生成树问题</h4><h3 id="day7"><a href="#day7" class="headerlink" title="day7"></a>day7</h3><h4 id="辗转相除法"><a href="#辗转相除法" class="headerlink" title="辗转相除法"></a>辗转相除法</h4><p>1.求最大公约数</p>
+<h4 id="素数"><a href="#素数" class="headerlink" title="素数"></a>素数</h4><p>1.素性测试</p>
+<p>2.埃式筛法</p>
+<p>3.区间筛法</p>
+<h4 id="快速幂"><a href="#快速幂" class="headerlink" title="快速幂"></a>快速幂</h4><p>反复平方法</p>
+<h3 id="other"><a href="#other" class="headerlink" title="other"></a>other</h3><h4 id="1-真好用！"><a href="#1-真好用！" class="headerlink" title="1.真好用！"></a>1.真好用！</h4><p>sort( )函数</p>
+<p>next_permutation( )函数</p>
+<p>find( )函数——&gt;string::npos</p>
+<p>memset( )函数</p>
+<p>vector的使用</p>
 
       
 
@@ -242,6 +270,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2022/03/13/%E8%93%9D%E6%A1%A5%E6%9D%AF/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          蓝桥杯
+        
+      </div>
+    </a>
   
   
     <a href="/2022/02/02/JavaWeb/" id="article-nav-older" class="article-nav-link-wrap">
@@ -392,6 +429,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">oj</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
               </li>
             
             <div class="clearfix"></div>

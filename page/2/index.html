@@ -132,6 +132,117 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Java多线程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/10/25/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/">Java多线程</a>
+    </h1>
+  
+
+        
+        <a href="/2021/10/25/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="archive-article-date">
+  	<time datetime="2021-10-25T07:26:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>一.创建线程</p>
+</blockquote>
+<p>1.继承Thread类，重写run( )方法，在main主线程中调用start开启线程</p>
+<p>2.commons-io包</p>
+<p>3.实现runnable接口</p>
+<p>4.实现Callable接口</p>
+<blockquote>
+<p>二.线程停止（stop）、休眠（sleep）、礼让（yield）、强制执行（join）</p>
+</blockquote>
+<p>1.线程停止</p>
+<p>①建议使用标志位</p>
+<p>2.线程休眠</p>
+<p>①模拟网络延时，放大问题的发生性</p>
+<p>②模拟倒计时</p>
+<p>③每一个对象都有一把锁，sleep不会释放锁</p>
+<p>3.线程礼让（不一定成功）</p>
+<blockquote>
+<p>三.线程同步（等待机制）</p>
+</blockquote>
+<p>①锁synchronized（隐式锁）</p>
+<p>②Java包锁（CopyOnWriteArrayList）</p>
+<p>③显示定义同步Lock锁（ReentrantLock）</p>
+<p>tips:</p>
+<p>线程死亡后就不能再启动</p>
+<p>注意避免死锁问题（一个同步块同时拥有两个以上对象的锁）</p>
+<p>多个线程操作同一个对象（并发问题），队列和锁（sleep）解决线程不安全的问题</p>
+<p>方法里面需要修改的内容才需要锁，只读不用</p>
+<p>Lambda表达式、线程优先级（Priority）、守护线程（daemon）</p>
+<p>管程法|信号灯法（ExecutorService Executors）</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">多线程</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/10/25/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-GUI编程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -624,6 +735,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">oj</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
               </li>
             
             <div class="clearfix"></div>
